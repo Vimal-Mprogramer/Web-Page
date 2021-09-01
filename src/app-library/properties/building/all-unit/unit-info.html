@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Unit Info | PMC Doorcares</title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark text-white">
+    <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
+    <main class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+        <section class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <h1 class="mt-5 h1 text-white text-center">Unit Info</h1>
+                    <h5 class="text-muted text-center"> <strong> B-08-03</strong>, KL Gateway Residences </h5>
+                    <hr />
+                    <form class="needs-validation text-start">
+
+                        <div class="row g-4 mt-0">
+                            <div class="col-6 col-md-4">
+                                <label for="ddl_block" class="form-label">Block</label>
+                                <select id="ddl_block" class="form-control form-select">
+                                    <option value="" selected> - </option>
+                                </select>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <label for="ddl_levelFloor" class="form-label">Level/Floor</label>
+                                <select id="ddl_levelFloor" class="form-control form-select">
+                                    <option value="" selected> - </option>
+                                </select>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <label for="ddl_unitNo" class="form-label">Unit number</label>
+                                <select id="ddl_unitNo" class="form-control form-select">
+                                    <option value="" selected> - </option>
+                                </select>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <label for="ddl_listingId" class="form-label">Listing ID</label>
+                                <select id="ddl_listingId" class="form-control form-select">
+                                    <option value="" selected> - </option>
+                                </select>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <label for="ddl_furnishing" class="form-label">Furnishing</label>
+                                <select id="ddl_furnishing" class="form-control form-select">
+                                    <option value="" selected> - </option>
+                                </select>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <label for="ddl_type" class="form-label">Type</label>
+                                <select id="ddl_type"class="form-control form-select">
+                                    <option value="" selected> - </option>
+                                </select>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <label for="ddl_sqFt" class="form-label">Sqft</label>
+                                <select id="ddl_sqFt" class="form-control form-select">
+                                    <option value="" selected> - </option>
+                                </select>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <label for="ddl_bedrooms" class="form-label"> Bedrooms </label>
+                                <select id="ddl_bedrooms" class="form-control form-select">
+                                    <option value="" selected> - </option>
+                                </select>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <label for="ddl_utilityRoom" class="form-label">Utility room</label>
+                                <select id="ddl_utilityRoom" class="form-control form-select">
+                                    <option value="" selected> - </option>
+                                </select>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <label for="ddl_bathroom" class="form-label">Bathroom</label>
+                                <select id="ddl_bathroom"class="form-control form-select">
+                                    <option value="" selected> - </option>
+                                </select>
+                            </div>
+                        </div>
+                        <hr class="my-5">
+                        <div class="row g-4 mt-0">
+                            <fieldset class="col-6 col-md-4" id="fieldset-car">
+                                <label for="car-part-number" class="form-label position-relative ">Total parking slot
+                                    <!-- <button class="btn btn-outline-info btn-sm position-absolute"
+                                            style="transform: translate(6px, -8px);" onclick="handleAddSlot(event)">
+                                            +Add slot
+                                        </button> -->
+                                </label>
+                                <!-- <select class="form-control form-select" id="car-park-slot">
+                                        <option value="1" selected> 1 </option>
+                                        <option value="2" > 2 </option>
+                                        <option value="3" > 3 </option>
+                                        <option value="4" > 4 </option>
+                                    </select> -->
+                                <input type="number" class="form-control" id="car-part-number" value="1" min="1"
+                                    max="10" onchange="handleChangeCarSlot(event)">
+                            </fieldset>
+
+                            <fieldset class="col-6 col-md-4 slot__number">
+                                <label for="txt_carParkSlot" class="form-label">Parking slot number</label>
+                                <div class="input-group">
+                                    <input type="text" id="txt_carParkSlot" class="form-control">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <hr class="my-5">
+                        <div class="row mt-0 g-4">
+
+                            <fieldset class="col-12 col-md-6 col-xl-4">
+                                <label for="ddl_fitMarket" class="form-label">Fit for market</label>
+                                <div class="input-group">
+                                    <select id="ddl_fitMarket"class="form-control form-select">
+                                        <option value=""> - </option>
+                                        <option value="Yes"> Yes </option>
+                                        <option value="No"> No </option>
+                                    </select>
+                                    <!-- <input type="number" class="form-control" id="car-park-slot"> -->
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="col-12 col-md-6 col-xl-4">
+                                <label for="ddl_willingUpgrade" class="form-label">If no, then is Landlord willing to
+                                    upgrade? </label>
+                                <div class="input-group">
+                                    <select id="ddl_willingUpgrade"class="form-control form-select">
+                                        <option value=""> - </option>
+                                        <option value="Yes"> Yes </option>
+                                        <option value="No"> No </option>
+                                    </select>
+                                    <!-- <input type="number" class="form-control" id="car-park-slot"> -->
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="col-12 col-md-6 col-xl-4">
+                                <label for="ddl_willingAdvertise" class="form-label">Is Landlord willing to Advertise in
+                                    Rizurf?</label>
+                                <div class="input-group">
+                                    <select for="ddl_willingAdvertise" class="form-control form-select">
+                                        <option value=""> - </option>
+                                        <option value="Yes"> Yes </option>
+                                        <option value="No"> No </option>
+                                    </select>
+                                    <!-- <input type="number" class="form-control" id="car-park-slot"> -->
+                                </div>
+                            </fieldset>
+
+                        </div>
+
+                        <hr class="my-5" />
+                        <div class="row justify-content-end mt-5">
+                            <div class="col-md-3 col-6">
+                                <a href="javascript:void" class="w-100 btn btn-outline-info">
+                                    Edit &nbsp;
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <a href="javascript:void" class="w-100 btn btn-primary">
+                                    Save &nbsp;
+                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer includehtml="/src/footer.html" class="mt-auto"></footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/includefile.js"></script>
+    <script>
+        includehtml();
+
+        function handleAddSlot(event) {
+            event.preventDefault()
+        }
+
+        function handleChangeCarSlot(event) {
+            event.preventDefault()
+            carPartNumberElement = event.target
+            carSlotCount = carPartNumberElement.value
+            const arraySlotNumber = document.querySelectorAll(".slot__number");
+            if (arraySlotNumber.length < 0) {
+                return
+            }
+
+            carPartNumberElement = document.getElementById("fieldset-car")
+
+            async function AddLoop() {
+                async function removeLoop() {
+                    let indexx = null
+                    for (let i = 0; i < arraySlotNumber.length; i++) {
+                        arraySlotNumber[i].remove();
+                        indexx = i
+                    }
+                    return indexx
+                }
+
+                await removeLoop();
+                for (let index = 0; index < carSlotCount; index++) {
+                    console.log('carSlotCount:', carSlotCount)
+                    let fieldset = document.createElement("fieldset");
+                    fieldset.classList.add("col-6", "col-md-4", "slot__number")
+                    let carParkSlotELement = `<label for="txt_carParkSlot-${index + 1}" class="form-label">Cark park slot ${index + 1} </label>
+                        <div class="input-group">
+                             <input type="text" class="form-control" id="txt_carParkSlot-${index + 1} ">
+                        </div>`
+                    fieldset.innerHTML = carParkSlotELement
+
+                    // inject next to fieldset#fieldset-car html element
+                    function insertAfter(newNode, existingNode) {
+                        existingNode.parentNode.appendChild(newNode)
+                    }
+                    insertAfter(fieldset, carPartNumberElement)
+                }
+
+                return
+            }
+            AddLoop()
+
+
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+/* Timeline Activities */
+/* ====================================================== */
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: rgb(145, 145, 145);
+  top: 26px;
+  bottom: 133px;
+  left: 28px;
+  margin-left: -3px;
+}
+
+.timeline.maintenance::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: rgb(145, 145, 145);
+  top: 26px;
+  bottom: 160px;
+  left: 28px;
+  margin-left: -3px;
+}
+
+.timelinecontainer {
+  padding: 10px 27px;
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+
+.timelinecontainer::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -18px;
+  background-color: #0d6efd;
+  top: 25px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 27px;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 17px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+.rightReply::before {
+  left: 65px;
+}
+.rightReply.tenant::before {
+  border: medium solid #a9ccea;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #a9ccea transparent transparent;
+}
+.rightReply.landlord::before {
+  border: medium solid #5ab3ff;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #5ab3ff transparent transparent;
+}
+
+.right::after {
+  left: -8px;
+}
+
+
+
+.content {
+  padding: 20px 30px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  border-radius: 6px;
+}
+
+.content:hover {
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+
+.right::after:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.timeline-line-x {
+  position: relative;
+}
+
+.tl_line {
+  height: 100%;
+  left: -6%;
+}
+/* .timeline-line-c.tl-arrow {
+  position: relative;
+} */
+.tl-arrow {
+  position: relative;
+}
+.tl-arrow::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  left: -1.7rem;
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  border-right:10px solid wheat;
+  font-size: 1.5rem;
+
+}
+
+.timeline-line-c::before {
+  pointer-events: none;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #0d6efd;
+  border: 1px solid #0d6efd;
+  border-radius: 50px;
+  position: absolute;
+  left: -3.6rem;
+  margin-top: .4%;
+}
+
+@media only screen and (max-width: 948px){
+  .tl-arrow::before {
+    display: none;
+  }
+}

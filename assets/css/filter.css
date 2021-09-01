@@ -1,0 +1,30 @@
+/* Start filter Button */
+
+.nav-link {
+  padding: .5rem 0.5rem;
+  flex: none !important;
+}
+
+.nav-pills button {
+  padding: 12px !important;
+}
+
+.btn-group-vertical>.btn, .btn-group>.btn {
+  text-transform: capitalize;
+}
+
+.notify-badge {
+  position: absolute !important;
+    top: -10px !important;
+    right: -7px;
+    border-radius: 30px;
+    color: #000;
+}
+/* .dropdown-menu.show {
+  width: 250px
+} */
+
+.dropdown-menu li a {
+  white-space: normal;
+  line-height: 1.5;
+}

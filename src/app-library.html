@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>App drawer | PMC Doorcares</title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    
+</head>
+
+<body class="p-0 bg-dark">
+    <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <section class="container my-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-10">
+                    <h1 class="text-white text-center mt-5">App Library</h1>
+                    <hr class="text-white" />
+                    <div class="row mt-5">
+                        <div class="col-lg-2 col-4 mb-3">
+                            <a href="/src/app-library/properties/building/building-list.html" class="app-link">
+                                <img src="/assets/img/home.svg" width="70" alt="Properties" />
+                                <br />
+                                <address>All Properties</address>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-4 mb-3">
+                            <a href="/src/app-library/appointment/appoinment-list.html" class="app-link">
+                                <img src="/assets/img/work-time.svg" width="70" alt="Appointment" />
+                                <br />
+                                <address>All Appointments</address>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-4 mb-3">
+                            <a href="/src/app-library/payments/payments.html" class="app-link">
+                                <img src="/assets/img/payments.svg" width="70" alt="Payments" />
+                                <br />
+                                <address>All Payments</address>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-4 mb-3">
+                            <a href="/src/app-library/maintenance/maintenance-list.html" class="app-link">
+                                <img src="/assets/img/highlyimportant.svg" class="m-0 " width="70" alt="Highly Important" />
+                                <br />
+                                <address>All Maintenance</address>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-4 mb-3">
+                            <a href="/src/app-library/users/users.html" class="app-link">
+                                <img src="/assets/img/user.svg" width="70" alt="Users" />
+                                <br />
+                                <address>All Users</address>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-4 mb-3">
+                            <a href="/src/app-library/rental-offers/rental-offer.html" class="app-link">
+                                <img src="/assets/img/offers.svg" width="70" alt="Offers" />
+                                <br />
+                                <address>All Rental Offers</address>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-4 mb-3">
+                            <a href="/src/app-library/check-in-check-out/check-in-check-out.html" class="app-link">
+                                <img src="/assets/img/moving-truck.svg" width="70" alt="TA &amp; Check-Ins" />
+                                <br />
+                                <address>All Check-In &amp; Check-Out</address>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-4 mb-3">
+                            <a href="/src/app-library/requirement/recommended/requirement-properties.html" class="app-link">
+                                <img src="/assets/img/tournament.svg" width="70" alt="TA &amp; Check-Ins" />
+                                <br />
+                                <address>All Requirements &amp; Recommendations</address>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer includehtml="/src/footer.html" class="mt-auto"></footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/includefile.js"></script>
+    <script>
+        includehtml();
+    </script>
+</body>
+
+</html>
